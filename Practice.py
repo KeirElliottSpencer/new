@@ -1,4 +1,3 @@
-
 ## Fizzbuzz warmup
 
 for x in range(1, 20):
@@ -10,6 +9,8 @@ for x in range(1, 20):
         print("buzz")
     else:
         print(x)
+
+
 
 #Means of Departments
 
@@ -23,6 +24,7 @@ df['Salary'].mean()
 
 result = df.groupby('Department')['Salary'].mean().reset_index()
 print(result)
+
 
 
 #Write a Python function to find the second largest number in a list of integers.
@@ -41,6 +43,7 @@ answer = secondlargest(list1)
 print(answer)
 
 
+
 #Given a 2D numpy array, write a function to calculate the row-wise mean and return the result as a 1D array.
 
 import numpy as np
@@ -54,12 +57,11 @@ def rowmean(row):
 print(rowmean(data))
 
 
+
 #Given a DataFrame with customer orders, find the top 3 customers who have made the most orders.
 
 data = {'Customer': ['Alice', 'Bob', 'Alice', 'Alice', 'Bob', 'Charlie', 'Charlie', 'Terry'], 'OrderID': [1, 2, 3, 4, 5, 6, 7, 8]}
 df = pd.DataFrame(data)
-
-
 answer = df['Customer'].value_counts().head(3)
 print(answer)
 #What if the third and so on have the same value?
